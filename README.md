@@ -1,5 +1,10 @@
 # kiti CLI
-
+## Para rodar basta:
+- Abrir o Microsoft Windows PowerShell
+- Rodar: iwr -useb https://raw.githubusercontent.com/Kiti-Co/Kiti-CLI/main/install-kiti.ps1 | iex
+- Digitar: kiti
+- Pronto!
+- 
 Um terminal simples em Node.js, baseado em CommonJS, com suporte a temas, edição de arquivos, navegação de diretórios e configuração persistente através de `user.json`.
 
 ---
