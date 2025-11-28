@@ -27,4 +27,4 @@ fi
 
 echo ""
 echo "Instalação concluída!"
-echo "Execute: kitios-server"
+echo "Execute: kiti"
