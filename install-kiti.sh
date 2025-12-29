@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-echo "Instalando KitiOS Server para Linux..."
+echo "Instalando Clow CLI para Linux..."
 
 # pasta de instalação
 INSTALL_DIR="$HOME/.local/bin"
@@ -11,9 +11,9 @@ EXEC_NAME="kiti"
 mkdir -p "$INSTALL_DIR"
 
 # url do binário linux (suba ele na release do GitHub)
-DOWNLOAD_URL="https://github.com/Kiti-Co/Kiti-CLI/releases/latest/download/KitiOS-Server"
+DOWNLOAD_URL="https://github.com/Kiti-Co/Clow-CLI/releases/latest/download/KitiOS-Server"
 
-echo "Baixando última versão do KitiOS Server..."
+echo "Baixando última versão do Clow CLI..."
 curl -L "$DOWNLOAD_URL" -o "$INSTALL_DIR/$EXEC_NAME"
 
 # verifica se o download foi bem-sucedido
@@ -28,7 +28,7 @@ chmod +x "$INSTALL_DIR/$EXEC_NAME"
 # adiciona ao PATH se não estiver
 export PATH=\$PATH:$HOME/.local/bin
 if ! command -v "$EXEC_NAME" &>/dev/null; then
-    echo "KitiOS não encontrado no PATH. Para adicioná-lo, execute:"
+    echo "Clow CLI não encontrado no PATH. Para adicioná-lo, execute:"
     echo "  export PATH=\$PATH:$INSTALL_DIR"
     echo "Ou adicione essa linha ao seu arquivo ~/.bashrc ou ~/.zshrc"
 fi
