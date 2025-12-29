@@ -6,10 +6,10 @@ if (!(Test-Path $installDir)) {
     New-Item -ItemType Directory -Path $installDir | Out-Null
 }
 
-Write-Host "Baixando kiti.exe da última release..."
+Write-Host "Baixando clow-cli.exe da última release..."
 
-$downloadUrl = "https://github.com/Kiti-Co/Clow-CLI/releases/latest/download/KitiOS-Server.exe"
-$dest = "$installDir\kiti.exe"
+$downloadUrl = "https://github.com/Kiti-Co/Clow-CLI/releases/latest/download/clowcli.exe"
+$dest = "$installDir\clow-cli.exe"
 
 # download correto, sem curl
 Invoke-WebRequest -Uri $downloadUrl -OutFile $dest
@@ -24,4 +24,4 @@ if ($oldPath -notlike "*$installDir*") {
 
 Write-Host ""
 Write-Host "Instalação concluída!"
-Write-Host "Reinicie o terminal e execute: kiti"
+Write-Host "Reinicie o terminal e execute: clow-cli"
