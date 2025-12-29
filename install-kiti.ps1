@@ -1,6 +1,6 @@
-Write-Host "Instalando KitiOS Server..."
+Write-Host "Instalando Clow CLI..."
 
-$installDir = "$env:USERPROFILE\KitiCLI"
+$installDir = "$env:USERPROFILE\ClowCLI"
 
 if (!(Test-Path $installDir)) {
     New-Item -ItemType Directory -Path $installDir | Out-Null
@@ -8,7 +8,7 @@ if (!(Test-Path $installDir)) {
 
 Write-Host "Baixando kiti.exe da última release..."
 
-$downloadUrl = "https://github.com/Kiti-Co/Kiti-CLI/releases/latest/download/KitiOS-Server.exe"
+$downloadUrl = "https://github.com/Kiti-Co/Clow-CLI/releases/latest/download/KitiOS-Server.exe"
 $dest = "$installDir\kiti.exe"
 
 # download correto, sem curl
